@@ -1,0 +1,76 @@
+/* Custom Styling for AI-Based Fake News Detection System */
+
+:root {
+  --primary-navy: #0f172a;
+  --accent-blue: #1e3a8a;
+  --accent-cyan: #0ea5e9;
+  --bg-soft: #f1f5f9;
+}
+
+body {
+  background-color: var(--bg-soft);
+  font-family: 'Segoe UI', system-ui, -apple-system, Roboto, sans-serif;
+  color: #1e293b;
+}
+
+.custom-navbar {
+  background: linear-gradient(90deg, #0f172a 0%, #1e293b 100%);
+  box-shadow: 0 2px 12px rgba(15, 23, 42, 0.25);
+}
+
+.hero-section {
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 65%, #0369a1 100%);
+  border-bottom: 4px solid #38bdf8;
+}
+
+.hero-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+#newsInput {
+  border: 2px solid #cbd5e1;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+#newsInput:focus {
+  border-color: #0284c7;
+  box-shadow: 0 0 0 0.25rem rgba(2, 132, 199, 0.15);
+}
+
+/* Result Card Themes */
+.result-real {
+  background-color: #f0fdf4;
+  border: 2px solid #22c55e !important;
+}
+
+.result-fake {
+  background-color: #fef2f2;
+  border: 2px solid #ef4444 !important;
+}
+
+/* Dashboard Icon Boxes */
+.icon-box {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chart-container {
+  position: relative;
+  height: 270px;
+  width: 100%;
+}
+
+.article-snippet {
+  max-width: 440px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
